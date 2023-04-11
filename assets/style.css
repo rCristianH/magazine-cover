@@ -9,6 +9,7 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #171717;
 }
 .container {
   height: 750px;
@@ -16,6 +17,7 @@ body {
   width: 500px;
   grid-template: repeat(10, 1fr) / repeat(7, 1fr);
   background-color: var(--azul-oscuro);
+  margin: 0 auto;
 }
 .item {
   background-color: var(--naranja-claro);
@@ -84,7 +86,7 @@ body {
   align-items: flex-end;
 }
 .textResal {
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 700;
   align-items: center;
   color: var(--marron);
@@ -114,4 +116,10 @@ body {
   width: 90%;
   filter: grayscale(75%) contrast(1.5);
   border-radius: 75%;
+}
+@media (max-width: 520px) {
+  .container{
+    width: 100vw;
+    height: 150vw;
+  }
 }
